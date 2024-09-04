@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificação de Idade para Cadastro</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <?php
+        $name = $_GET["name"];
         $idade = $_GET["idade"];
+        $email = $_GET["email"];
 
-        if (idade < 18)
-        echo "A idade mínima para cadastro é 18 anos"
+
+        if ($idade < 18)
+        echo "O cadastro não pode ser concluído, pois a idade mínima para cadastro é 18 anos";
         else 
-        echo "Cadastro concluído com sucesso!"
+        echo "Cadastro concluído com sucesso!";
 
     ?>
 
